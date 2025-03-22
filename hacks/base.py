@@ -5,6 +5,7 @@ def get_params_patched(cls):
      return {"max_depth": cls.max_depth, "max_features": cls.max_features}
 
 def sksurv_model_hack(model):
+   """Hack the sksurv model to be compatible with concrete-ml."""
    match model.__class__.__name__:
         case "SurvivalTree":
              # SurvivalTree in disguise as sklearn DecisionTreeRegressor.

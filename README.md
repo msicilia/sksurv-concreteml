@@ -7,8 +7,8 @@ This allows survival models to be used under FHE, for privacy preserving inferen
 ### Idea
 The basic assumptions are the following:
 - `scikit-survival` is `scikit-learn`-API compatible. 
-- Survival models are a particular kind of regressor, so they could be treated as regressors of similar kind that are available in `concrete-ml`.
-- 
+- Survival models are a particular kind of multi-output regressor, so they could be treated as regressors of similar kind that are available in `concrete-ml`.
+
 
 ### Current implementation
 

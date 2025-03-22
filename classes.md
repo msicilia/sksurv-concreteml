@@ -1,6 +1,7 @@
+
+
 ```mermaid
 classDiagram
-
    namespace sklearn.base {
     class RegressorMixin
     }

@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def plot_survival_function(time_points, surv_points, label):
+    """Plot the survival function"""
     plt.figure(figsize=(5, 3))
     plt.step(time_points, surv_points, where="post", label=f"{label}")
     plt.ylabel("Survival probability")
